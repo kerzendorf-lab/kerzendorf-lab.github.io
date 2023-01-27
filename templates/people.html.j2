@@ -67,13 +67,16 @@
 										<p> {{ person.project_title }} </p>
 										<h6> {{ person.university }} </h6>
 										{% if person['website'] != "None" %}
-											<a href= "{{ person.website }}" ><i class="fa fa-dribbble"></i></a>
+											<a href= {{ person.website }} ><i class="fa fa-dribbble"></i></a>
 										{% endif %}
 										{% if person['twitter'] != "None" %}
-											<a href= "{{  person.twitter }}" ><i class="fa fa-twitter"></i></a>
+											<a href= {{  person.twitter }} ><i class="fa fa-twitter"></i></a>
 										{% endif %}	
 										{% if person['linkedin'] != "None" %}
-											<a href= "{{  person.linkedin }}" ><i class="fa fa-linkedin"></i></a>
+											<a href= {{  person.linkedin }} ><i class="fa fa-linkedin"></i></a>
+										{% endif %}
+										{% if person['github'] != "None" %}
+											<a href= {{  person['github'] }} ><i class="fa fa-github"></i></a>
 										{% endif %}
 										<p><button></button></p>
 										</div>
@@ -112,13 +115,16 @@
 										<p> {{ person.project_title }} </p>
 										<h6> {{ person.university }} </h6>
 										{% if person['website'] != "None" %}
-											<a href= "{{  person['website'] }}" ><i class="fa fa-dribbble"></i></a>
+											<a href= {{ person.website }} ><i class="fa fa-dribbble"></i></a>
 										{% endif %}
 										{% if person['twitter'] != "None" %}
-											<a href= "{{  person['twitter'] }}" ><i class="fa fa-twitter"></i></a>
+											<a href= {{  person.twitter }} ><i class="fa fa-twitter"></i></a>
 										{% endif %}	
 										{% if person['linkedin'] != "None" %}
-											<a href= "{{  person['linkedin'] }} "><i class="fa fa-linkedin"></i></a>
+											<a href= {{  person.linkedin }} ><i class="fa fa-linkedin"></i></a>
+										{% endif %}
+										{% if person['github'] != "None" %}
+											<a href= {{  person['github'] }} ><i class="fa fa-github"></i></a>
 										{% endif %}
 										<p><button></button></p>
 										</div>
