@@ -1,6 +1,15 @@
 {
-    "website_title": "Vestibulum",
-    "navigation_bar": ["index", "People", "Research", "Contact"],
-    "Research": ["Vestibulum ante", "Fusce vitae", "Quisque arcu"],
-    "address" : "567 Wilson Rd, East Lansing, MI 48824"
+    "website_title": "Kerzendorf Group Website",
+    "navigation_bar": [
+        "Index",
+        "People",
+        "Research",
+        "Contact"
+    ],
+    "Research": [
+        "SubG 1",
+        "SubG 2",
+        "SubG 3"
+    ],
+    "address": "567 Wilson Rd, East Lansing, MI 48824"
 }
