@@ -78,6 +78,9 @@
 										{% if person['github'] != "None" %}
 											<a href= {{  person['github'] }} ><i class="fa fa-github"></i></a>
 										{% endif %}
+                                        {% if person['orcid'] != "None" %}
+											<a href= {{  person['orcid'] }} ><i class="fa fa-github"></i></a>
+										{% endif %}
 										<p><button></button></p>
 										</div>
 										</div>
@@ -125,6 +128,9 @@
 										{% endif %}
 										{% if person['github'] != "None" %}
 											<a href= {{  person['github'] }} ><i class="fa fa-github"></i></a>
+										{% endif %}
+                                        {% if person['orcid'] != "None" %}
+											<a href= {{  person['orcid'] }} ><i class="fa fa-github"></i></a>
 										{% endif %}
 										<p><button></button></p>
 										</div>
