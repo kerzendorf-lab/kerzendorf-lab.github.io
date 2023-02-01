@@ -5,7 +5,7 @@
     "role": "Education Coordinator",
     "tags":["Astrophysics", "Type Ia Supernovae", "Radiative Transfer", "Machine Learning", "Emulation", "Bayesian Inference"],
     "university": "Michigan State University",
-    "introduction": "Welcome to my personal website! I'm Jack O'Brien, a Graduate Student in Astrophysics at Michigan State University. My research centers around trying to understand the origins of Type Ia supernovae through backwards modeling of spectral time-series using Bayesian inference and deep learning. I'm also a senior developer for TARDIS and have been a mentor for Google Summer of Code for three years. I have a passion for teaching and mentoring, and I love to share my expertise in astrophysics, programming, and data science with students at Michigan State University. With a wide range of interests, I believe that my well-rounded background makes me an effective researcher and educator.",
+    "introduction": "I'm Jack O'Brien, a Graduate Student in Astrophysics at Michigan State University. My research centers around trying to understand the origins of Type Ia supernovae through backwards modeling of spectral time-series using Bayesian inference and deep learning. I'm also a senior developer for TARDIS and have been a mentor for Google Summer of Code for three years. I have a passion for teaching and mentoring, and I love to share my expertise in astrophysics, programming, and data science with students at Michigan State University. With a wide range of interests, I believe that my well-rounded background makes me an effective researcher and educator.",
     "start_year": 2019,
     "end_year": "None", 
     "image_path": "images/jwst-carina-879x485.jpg",
