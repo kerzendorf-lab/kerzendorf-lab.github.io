@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title> {{ general.website_title }} </title>
+        <title> Kerzendorf Group Website </title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
         <link rel="stylesheet" href="../assets/css/main.css" />
@@ -16,18 +16,37 @@
                     <nav id="nav">
                         <ul>
                             <li>
-                                {% for page in general["navigation_bar"] %}
+                                
                             <li>
-                                <a href="../{{ page_link(page) }}.html">{{ page }}</a>
-                                {% if page in general %}
-                                <ul>
-                                    {% for sub_page in general[page] %}
-                                    <li><a href="..sub_research/{{ page_link(sub_page) }}.html">{{sub_page}}</a></li>
-                                    {% endfor %}
-                                </ul>
-                                {% endif %}
+                                <a href="../index.html">index</a>
+                                
                             </li>
-                            {% endfor %}
+                            
+                            <li>
+                                <a href="../People.html">People</a>
+                                
+                            </li>
+                            
+                            <li>
+                                <a href="../Research.html">Research</a>
+                                
+                                <ul>
+                                    
+                                    <li><a href="..sub_research/SubG_1.html">SubG 1</a></li>
+                                    
+                                    <li><a href="..sub_research/SubG_2.html">SubG 2</a></li>
+                                    
+                                    <li><a href="..sub_research/SubG_3.html">SubG 3</a></li>
+                                    
+                                </ul>
+                                
+                            </li>
+                            
+                            <li>
+                                <a href="../Contact.html">Contact</a>
+                                
+                            </li>
+                            
                             </li>
                         </ul>
                     </nav>
@@ -42,14 +61,14 @@
                         <section class="col-6 col-12-narrower feature">
                             <div class="image-wrapper" style="width:25%; margin:auto;" >
 							 <section>
-                                <a href="#" class="image featured"><img src="../{{ person.image_path }}" alt="" /></a>
+                                <a href="#" class="image featured"><img src="../images/persons/blank.png" alt="" /></a>
                             </section>
                             </div>
                             <header>
-                                <h2> {{ person.name }} </h2>
+                                <h2> Post Doc Name </h2>
                             </header>
                             <p> About Me:</p>
-                            <p> {{ person.introduction  }}</p>
+                            <p> Post doc Quisque eu placerat erat. Donec vitae urna eget metus imperdiet dictum quis nec dui. In ullamcorper lectus quis dolor aliquam ullamcorper. Proin gravida nibh pharetra nisi condimentum venenatis. Donec eget pharetra nisi, elementum pharetra magna. Nulla in erat a elit blandit congue. Nunc nec nunc ullamcorper, aliquet purus nec, laoreet lectus. Curabitur ut varius lorem. Vestibulum id tempus nunc. Nullam eget quam ultricies, molestie libero ut, lobortis neque.</p>
                         </section>
                     </div>
                 </div>
@@ -60,7 +79,7 @@
             <div id="footer">
                 <section id="footer">
                     <div style="padding-left: 5%;" >
-                        <h6 class="icon maps fa-map"> {{ general.address }}</h6>
+                        <h6 class="icon maps fa-map"> 567 Wilson Rd, East Lansing, MI 48824</h6>
                     </div>
                 </section>
             </div>

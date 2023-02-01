@@ -2161,8 +2161,9 @@ input, select, textarea {
 		}
 
 	#nav {
-		text-align: center;
+		text-align: right;
 		position: absolute;
+		padding-right: 3%;
 		top: 0;
 		left: 0;
 		width: 100%;

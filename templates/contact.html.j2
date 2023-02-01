@@ -31,28 +31,48 @@
                     </nav>
                 </div>
             </div>
-            <!-- Main -->
+
+
+
+            <!-- Features 1 -->
             <div class="wrapper">
                 <div class="container">
-                    <div class="image-wrapper">
-                        <a href="#" class="image featured"><img src="images/pic02.jpg" /></a>
-                    </div>
                     <header>
-                        <h2> {{ Homepage.header }} </h2>
+                        <h2> {{ contact.form_title }} </h2>
                     </header>
-                    <p> {{ Homepage.main_paragraph }} </p>
+                    <section class="col-6 col-12-narrower">
+                        <form method="post" action="#">
+                            <div class="row gtr-50">
+                                <div class="col-6 col-12-mobile">
+                                    <input name="name" placeholder="{{ contact.field1 }}" type="text" />
+                                </div>
+                                <div class="col-6 col-12-mobile">
+                                    <input name="email" placeholder="{{ contact.field2 }}" type="text" />
+                                </div>
+                                <div class="col-12">
+                                    <textarea name="message" placeholder="{{ contact.field3 }}"></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <ul class="actions">
+                                        <li><input type="submit" value="{{ contact.button1 }}" /></li>
+                                        <li><input type="reset" value="{{ contact.button2 }}" /></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </form>
+                    </section>
                 </div>
             </div>
             <!-- Footer -->
             <div id="footer-wrapper">
-                <div id="footer">
-                    <section id="footer">
-                        <div style="padding-left: 5%;" >
-                            <h6 class="icon maps fa-map"> {{ general.address }}</h6>
-                        </div>
-                    </section>
-                </div>
+            <div id="footer">
+                <section id="footer">
+                    <div style="padding-left: 5%;" >
+                        <h6 class="icon maps fa-map"> {{ general.address }}</h6>
+                    </div>
+                </section>
             </div>
+        </div>
         </div>
         <!-- Scripts -->
         <script src="assets/js/jquery.min.js"></script>
