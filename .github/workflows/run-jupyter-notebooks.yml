@@ -3,7 +3,7 @@ name: run-notebook
 on:
   workflow_dispatch:
   workflow_run:
-    workflows: ["JSON check"]
+    workflows: ["Check Changes"]
     types:
       - completed
 
