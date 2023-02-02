@@ -1,3 +1,4 @@
+name: Check changes
 on:
   push:
     paths:
