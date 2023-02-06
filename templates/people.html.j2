@@ -1,0 +1,103 @@
+<html>
+    <head>
+        <title> {{ general.website_title }} </title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <link rel="stylesheet" href="assets/css/card.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    </head>
+    <body class="right-sidebar is-preload">
+        <div id="page-wrapper">
+        <!-- Header -->
+        <div id="header-wrapper">
+            <div id="header" class="container">
+                <!-- Nav -->
+                <nav id="nav">
+                    <ul>
+                        <li>
+                            {% for page in general["navigation_bar"] %}
+                        <li>
+                            <a href="{{ page_link(page) }}.html">{{ page }}</a>
+                            {% if page in general %}
+                            <ul>
+                                {% for sub_page in general[page] %}
+                                <li><a href="sub_research/{{ page_link(sub_page) }}.html">{{sub_page}}</a></li>
+                                {% endfor %}
+                            </ul>
+                            {% endif %}
+                        </li>
+                        {% endfor %}
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- Hero -->
+            <section id="hero" class="container">
+                <header>
+                    <h2>About Section</h2>
+                </header>
+            </section>
+        </div>
+        <!-- Instructor -->
+        {% for role in [instructor, post_docs,grad_students, undergrads,alumni] %}
+        <div class="row">
+            <section class="col-6 col-12-narrower feature">
+                <header>
+                    <h2> {{ role[0]['head_title'] }} </h2>
+                </header>
+            </section>
+        </div>
+        <div class="wrapper">
+            <div class="container" id="main">
+                <article id="content">
+                    <div class="row">
+                        {% for person in role %}
+                        {% if person['end_year'] == "None" %}
+                        <div class="column">
+                            <div class="card">
+                                <img src="{{ person.image_path }}" style="width:100%">
+                                <h1><a href= "people/{{page_link(person.name) }}.html">{{ person.name }}</a></h1>
+                                <p> {{ person.role }} </p>
+                                <p> {{ person.project_title }} </p>
+                                <h6> {{ person.university }} </h6>
+                                {% if person['website'] != "None" %}
+                                <a href= "{{ person.website }}" ><i class="fa fa-dribbble"></i></a>
+                                {% endif %}
+                                {% if person['twitter'] != "None" %}
+                                <a href= {{  person.twitter }} ><i class="fa fa-twitter"></i></a>
+                                {% endif %}	
+                                {% if person['linkedin'] != "None" %}
+                                <a href= {{  person.linkedin }} ><i class="fa fa-linkedin"></i></a>
+                                {% endif %}
+                                <p><button></button></p>
+                            </div>
+                        </div>
+                        {% endif %}
+                        {% endfor %}
+                    </div>
+                </article>
+            </div>
+        </div>
+        {% endfor %}
+        <!-- End_sec -->
+       
+        <!-- Footer -->
+        <div id="footer-wrapper">
+            <div id="footer">
+                <section id="footer">
+                    <div style="padding-left: 5%;" >
+                        <h6 class="icon maps fa-map"> {{ general.address }}</h6>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.dropotron.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
