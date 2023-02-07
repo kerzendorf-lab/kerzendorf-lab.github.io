@@ -1,7 +1,11 @@
-name: Check changes PVT
+name: Check changes
 
 on:
+  push:
+    paths:
+      - '**'
   repository_dispatch:
+    workflow_run:
     types: [repo-push]
 
 jobs:
@@ -21,7 +25,7 @@ jobs:
           lfs: false
           submodules: false
           set-safe-directory: true
-          token: ${{ secrets.PAT }}
+          token: ${{ secrets.ACCESS_DATA }}
 
       - name: Check changes
         run: echo "Checking changes made to repository files" 
