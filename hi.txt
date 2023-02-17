@@ -1,1 +1,1 @@
-Both submodules testing.
+Hi to submodule
