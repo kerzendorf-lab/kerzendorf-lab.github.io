@@ -1,1 +1,1 @@
-hello submodule
+Both submodules test.
