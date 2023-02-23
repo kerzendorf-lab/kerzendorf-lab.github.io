@@ -1,9 +1,6 @@
 name: Check changes
 
 on:
-  push:
-    paths:
-      - '**'
   repository_dispatch:
     workflow_run:
     types: [repo-push]
@@ -28,4 +25,4 @@ jobs:
           token: ${{ secrets.ACCESS_DATA }}
 
       - name: Check changes
-        run: echo "Checking changes made to repository files" 
+        run: echo "Checking changes made to repository files"
