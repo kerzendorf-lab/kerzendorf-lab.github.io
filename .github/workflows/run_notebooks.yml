@@ -2,10 +2,6 @@ name: Run Notebooks
 
 on:
   workflow_dispatch:
-  workflow_run:
-    workflows: ["Check changes"]
-    types:
-      - completed
 
 jobs:
   run:
