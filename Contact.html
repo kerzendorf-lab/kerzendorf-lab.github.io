@@ -57,114 +57,128 @@
 
         <!-- Features 1 -->
         <div class="wrapper">
-            <div class="container">
-                <header>
-                    <h2> Contact Us!  </h2>
-                </header>
-                <section class="col-6 col-12-narrower">
-                    <form method="post" action="#">
-                        <div class="row gtr-50">
-                            <div class="col-6 col-12-mobile">
-                                <input name="name" placeholder="Name" type="text" />
+            <div class="container" id="main">
+                <div class="row">
+                    <div class="col-md-6">
+                        <header>
+                            <h2> Contact Us!  </h2>
+                        </header>
+                         <form method="post" action="#">
+                            <div class="row gtr-50">
+                                <div class="col-6 col-12-mobile">
+                                    <input name="name" placeholder="Name" type="text" />
+                                </div>
+                                <div class="col-6 col-12-mobile">
+                                    <input name="email" placeholder="Email " type="text" />
+                                </div>
+                                <div class="col-12">
+                                    <textarea name="message" placeholder="Message"></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <ul class="actions">
+                                        <li><input type="submit" value="Send Message" /></li>
+                                        <li><input type="reset" value="Clear" /></li>
+                                    </ul>
+                                </div>
                             </div>
-                            <div class="col-6 col-12-mobile">
-                                <input name="email" placeholder="Email " type="text" />
+                        </form>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="map-wrapper">
+                            <div style="width: 100%; "><iframe width="100%" height="100%" frameborder="0" scrolling="no"
+                                    marginheight="0" marginwidth="0"
+                                    src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=567%20Wilson%20Rd,%20East%20Lansing,%20MI%2048824,%20United%20States+(MSU%20Group)&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a
+                                        href="https://www.maps.ie/distance-area-calculator.html">area maps</a></iframe>
                             </div>
-                            <div class="col-12">
-                                <textarea name="message" placeholder="Message"></textarea>
-                            </div>
-                            <div class="col-12">
-                                <ul class="actions">
-                                    <li><input type="submit" value="Send Message" /></li>
-                                    <li><input type="reset" value="Clear" /></li>
-                                </ul>
-                            </div>
+
                         </div>
-                    </form>
-                </section>
+                    </div>
+                </div>
             </div>
         </div>
-        <!-- footer start -->
-        <footer class="footer">
-            <div class="footer_top">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-4 col-md-6 col-lg-4">
-                            <div class="footer_widget">
-                                <div class="logo_footer">
-                                    <a href="index.html">
-                                        <img src="img/logo.png" alt="">
-                                    </a>
+            <!-- footer start -->
+            <footer class="footer">
+                <div class="footer_top">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-4 col-md-6 col-lg-4">
+                                <div class="footer_widget">
+                                    <div class="logo_footer">
+                                        <a href="index.html">
+                                            <img src="img/logo.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-md-6 col-lg-3">
+                                <div class="footer_widget">
+                                    <h3 class="footer_title">
+                                        Address
+                                    </h3>
+                                    <ul style="padding-right: 40%;">
+                                        <li>
+                                            <h6 class="icon maps fa-map"> 567 Wilson Rd, East Lansing, MI 48824</h6>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-md-6 col-lg-3">
+                                <div class="footer_widget">
+                                    <h3 class="footer_title">
+                                        Useful Links
+                                    </h3>
+                                    <ul>
+                                        
+                                        <li><a href="https://tardis-sn.github.io/" target="_blank">Tardis</a></li>
+                                        
+                                        <li><a href="https://www.tardis.org" target="_blank">Link</a></li>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-md-6 col-lg-2">
+                                <div class="footer_widget">
+                                    <h3 class="footer_title">
+                                        Social Links
+                                    </h3>
+                                    <ul>
+                                        
+                                        <li><a href="https://www.facebook.com/kerzendorfgroup">Facebook</a></li>
+                                        
+                                        <li><a href="https://twitter.com/kerzendorfgroup">Twitter</a></li>
+                                        
+                                        <li><a href="https://www.linkedin.com/company/kerzendorfgroup/">LinkedIn</a></li>
+                                        
+                                        <li><a href="https://www.test/">Instagram</a></li>
+                                        
+                                    </ul>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-3 col-md-6 col-lg-3">
-                            <div class="footer_widget">
-                                <h3 class="footer_title">
-                                    Address
-                                </h3>
-                                <ul style="padding-right: 40%;">
-                                    <li>
-                                        <h6 class="icon maps fa-map"> 567 Wilson Rd, East Lansing, MI 48824</h6>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-md-6 col-lg-3">
-                            <div class="footer_widget">
-                                <h3 class="footer_title">
-                                    Useful Links
-                                </h3>
-                                <ul>
-                                    
-                                    <li><a href="https://tardis-sn.github.io/" target="_blank">Tardis</a></li>
-                                    
-                                    <li><a href="https://www.tardis.org" target="_blank">Link</a></li>
-                                    
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-xl-2 col-md-6 col-lg-2">
-                            <div class="footer_widget">
-                                <h3 class="footer_title">
-                                    Social Links
-                                </h3>
-                                <ul>
-                                    
-                                    <li><a href="https://www.facebook.com/kerzendorfgroup">Facebook</a></li>
-                                    
-                                    <li><a href="https://twitter.com/kerzendorfgroup">Twitter</a></li>
-                                    
-                                    <li><a href="https://www.linkedin.com/company/kerzendorfgroup/">LinkedIn</a></li>
-                                    
-                                    <li><a href="https://www.test/">Instagram</a></li>
-                                    
-                                </ul>
+                    </div>
+                </div>
+                <div class="copy-right_text">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <p class="copy_right text-center">
+                                    Made with passion | MSU Group
+                                    <script>document.write(new Date().getFullYear());</script>
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="copy-right_text">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-12">
-                            <p class="copy_right text-center">
-                                Made with passion | MSU Group
-                                <script>document.write(new Date().getFullYear());</script>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <!--footer end-->
-        <!-- Scripts -->
-        <script src="assets/js/jquery.min.js"></script>
-        <script src="assets/js/jquery.dropotron.min.js"></script>
-        <script src="assets/js/browser.min.js"></script>
-        <script src="assets/js/breakpoints.min.js"></script>
-        <script src="assets/js/util.js"></script>
-        <script src="assets/js/main.js"></script>
+            </footer>
+            <!--footer end-->
+            <!-- Scripts -->
+            <script src="assets/js/jquery.min.js"></script>
+            <script src="assets/js/jquery.dropotron.min.js"></script>
+            <script src="assets/js/browser.min.js"></script>
+            <script src="assets/js/breakpoints.min.js"></script>
+            <script src="assets/js/util.js"></script>
+            <script src="assets/js/main.js"></script>
+    
+    </div>
 </body>
 </html>
