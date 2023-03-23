@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/carousell.css">
+
 </head>
 <body class="right-sidebar is-preload">
     <div id="page-wrapper">
@@ -84,6 +86,24 @@
             <li><a href=""><i class="fa fa-link"></i></a></li>
 
         </ul>
+
+        <!--div style="display: flex; justify-content: center; align-items: center; margin-top:5%">
+            <iframe src="../[{'Poster1': 'members/data/josh_shields/media/documents/teff_rad_contours.pdf', 'Poster2': 'members/data/josh_shields/media/documents/fw8ben.pdf'}]" style="width:70%; height:500px;"></iframe>
+        </div-->
+        
+        <h2 style="text-align: center; padding-top:5%;"> Posters</h2>
+        <div class="slider">
+        
+            <div class="mySlides">
+                <div class="numbertext">1 / 6</div>
+                <iframe src="../{'Poster1': 'members/data/josh_shields/media/documents/teff_rad_contours.pdf', 'Poster2': 'members/data/josh_shields/media/documents/fw8ben.pdf'}" style="width:100%"></iframe>
+            </div>
+               
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+        
+
     </div>
 
     <!-- footer start -->
@@ -168,5 +188,6 @@
     <script src="../assets/js/breakpoints.min.js"></script>
     <script src="../assets/js/util.js"></script>
     <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/carousell.js"></script>
 </body>
 </html>
