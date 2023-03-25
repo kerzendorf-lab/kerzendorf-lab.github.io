@@ -1,0 +1,15 @@
+[
+    {
+        "name": "Sample Person",
+        "project_title": "Title of project",
+        "org": "Kerzendorf Group",
+        "category": "Graduates",
+        "current_role": "present role",
+        "tags": [],
+        "start_year": "2019",
+        "end_year": "None",
+        "university": "University name",
+        "image_path": "members/data/template_person/media/images/newton.jpeg",
+        "introduction": "Intoduction paragraph."
+    }
+]

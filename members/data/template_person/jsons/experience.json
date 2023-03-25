@@ -1,0 +1,35 @@
+[
+    {
+
+        "experience": [
+            {
+                "exp1": [
+                    "Institution Name",
+                    "start year-end year",
+                    "role at institution"
+        
+                ],
+                "exp2": [
+                    "Institution Name",
+                    "start year-end year",
+                    "role at institution"
+                ]
+            }
+        ],
+        "projects": [
+            {
+                "proj1": [
+                    "Project Name",
+                    "start year-end year",
+                    "Task in project"
+                   
+                ],
+                "proj2": [
+                    "Project Name",
+                    "start year-end year",
+                    "Task in project"
+                ]
+            }
+        ]
+    }
+]

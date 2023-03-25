@@ -1,0 +1,20 @@
+[
+    {
+
+        "education": [
+            {
+                "edu1": [
+                    "University Name",
+                    "start year-end year",
+                    "Degree name"
+                    
+                ],
+                "edu2": [
+                    "University Name",
+                    "start year-end year",
+                    "Degree name"
+                ]
+            }
+        ]
+    }
+]
