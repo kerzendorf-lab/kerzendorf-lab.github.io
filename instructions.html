@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Adding Your Data for Hosting on the Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+    }
+    
+    .instructions {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 50px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      border-radius: 10px;
+    }
+
+    h2 {
+      font-size: 36px;
+      margin-top: 0;
+      margin-bottom: 20px;
+      text-align: center;
+      color: #333;
+      text-shadow: 2px 2px 0 #fff;
+    }
+    h1 {
+      text-align: center;
+    }
+    ol {
+      margin: 0;
+      padding: 0 0 0 40px;
+    }
+
+    li {
+      margin-bottom: 10px;
+      font-size: 18px;
+      line-height: 1.5;
+      color: #555;
+    }
+
+    code {
+      background-color: #f1f1f1;
+      border-radius: 3px;
+      padding: 2px 5px;
+      font-size: 16px;
+      color: #333;
+    }
+
+    p {
+      margin-top: 20px;
+      font-size: 16px;
+      line-height: 1.5;
+      color: #777;
+    }
+
+    a {
+      color: #c73866;
+      text-decoration: none;
+      font-weight: bold;
+      border-bottom: 2px solid #c73866;
+      transition: border-bottom 0.2s;
+    }
+
+    a:hover {
+      border-bottom: 2px solid #333;
+    }
+
+    .note {
+      background-color: #c73866;
+      color: #fff;
+      font-weight: bold;
+}
+  </style>
+</head>
+<body>
+  <div class="instructions">
+    <h2>How to Add Your Data for Hosting on the Website</h2>
+    <ul>
+      <li>Visit the repository at <a href="https://github.com/kerzendorf-group/group-data" target="_blank">https://github.com/kerzendorf-group/group-data</a> and fork it.</li>
+      <li>There exists a <b>template_person</b> direcotry inside <code>members</code> directory. Simple follow the same format to update your own directory. Kindly change your pre existing structure so that it looks like the one of <b>template_person</b> </li>
+    <h1>Detailed steps</h1>
+    </ul>
+    <ol>
+       <li>Create a new directory with your name (if it doesn't exists already) and inside your directory's <code>json</code> folder copy all json files from <code>template_person/jsons </code>  and enter your own details in those json files.</li>
+       <li>The values of keys in <code>social_links.jsons</code> can be "None" in case you don't have anything to enter.Example "orchid": "None"</li>
+       <li>In case you don't have anything to enter inside any other json file, example you don't have "books" or "posters" then erase that section from json while making sure syntax is correct.</li>
+       <li>Please note that the “category” key inside basic_data.json should be spelled same “Graduates”, “Undergraduates”, “Post Graduates”, “Post Doctorates” only, in order to group people together. Please add <code>"myrole": "Your_role"</code> inside your JSON file as the value for your latest role in group.</li>
+
+      <li>It is important to note that if you are currently a part of kerzendorf group then in <code>basic_info.json</code>  the value <b>"group_end_year": "Present"</b> should exist, else enter year of leaving so that your name can be placed in Alumni category </li>
+      <li>Upload your profile picture (square-shaped), which will be displayed on the website, into the <code>media/images</code> directory.</li>
+      <li>Upload any other necessary media into the <code>media</code> folder and any documents into the <code>documents</code> directory.</li>
+      <li>Ensure that after uploading the files, you update those changes in your own JSON files present in your directory as well, with the path pointing to the file location. The path to files present inside the <code>media</code> or <code>document</code> directory should start with <code>members/data</code> followed by your directory name and then the rest of the path.</li>
+      <li>In the <code>groupwebsite_data</code> directory, open <code>people_list.json</code> and make an entry inside "people" and "people_directory" keys. By looking at already present entries in the list</li>
+      <li>Finally, create a Pull Request.</li>
+    </ol>
+  </div>
+</body>
+</html>
