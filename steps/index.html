@@ -8,7 +8,7 @@
       font-family: Arial, sans-serif;
       background-color: #f9f9f9;
     }
-    
+
     .instructions {
       max-width: 800px;
       margin: 0 auto;
@@ -26,9 +26,11 @@
       color: #333;
       text-shadow: 2px 2px 0 #fff;
     }
+
     h1 {
       text-align: center;
     }
+
     ol {
       margin: 0;
       padding: 0 0 0 40px;
@@ -72,40 +74,62 @@
       background-color: #c73866;
       color: #fff;
       font-weight: bold;
-}
+    }
   </style>
 </head>
 <body>
   <div class="instructions">
     <h2>How to Add Your Data for Hosting on the Website</h2>
     <ul>
-      <li>Reply to this thread or personally message me with your github username so that it can be added on github repo</a> </li>
-      
-    <h1>Detailed steps</h1>
+      <li>Reply to this thread or personally message me with your github username so that it can be added on github
+        repo</a> </li>
+
+      <h1>Detailed steps</h1>
     </ul>
     <ol>
-      <li>Fork the repository <a href="https://github.com/kerzendorf-group/group-data" target="_blank">https://github.com/kerzendorf-group/group-data</a> </li>
-      <li>Clone it to your local system by running <code>git@github.com:kerzendorf-group/group-data.git</code> in the terminal. </li>
-       <li>Create a new directory with your name (if it doesn't exists already) and inside your directory's <code>json</code> folder copy all json files from <code>template_person/jsons </code>  and enter your own details in those json files.</li>
-       <li>The cloned repository's folder 'group-data' contains a directory named 'members'.The cloned repository's folder 'group-data' contains a directory named 'members'.</li>
-       <li>Navigate to the 'members' directory and create your own folder if it does not already exist.</li>
-        <li>Follow the folder structure of the 'template_person' folder and replicate the same structure for your own folder (as shown in the figure below). </li>
-        <img style="max-width: 500px;" src="directory.png">
-        <li>Please note that the 'jsons' folder contains multiple JSON files. Copy and paste them into your own 'jsons' folder.</li>
-        <li>Please note that the “category” key inside basic_data.json should be spelled same “Graduates”, “Undergraduates”, “Post Graduates”, “Post Doctorates” only (case-sensitive), in order to group people together. Please add <code>"current_role": "Your_role"</code> inside your JSON file as the value for your latest role in group.</li>
-      <li>Enter all the required information as well.It is important to maintain correct capitalization for everything. The data is case-sensitive</li>
+      <li>Fork the repository <a href="https://github.com/kerzendorf-group/group-data"
+          target="_blank">https://github.com/kerzendorf-group/group-data</a> </li>
+      <li>Clone your fork to your local system through the terminal<br>
+        <code>git@github.com:kerzendorf-group/group-data.git</code> </li>
+      <li>Add remote to upstream<br><code>git remote add upstream git@github.com:kerzendorf-group/group-data.git</code> <br>(can
+        copy this command directly)</li>
+      <li>Create a branch then switch to your
+        branch. <br><code>git checkout -b branch_name_like_bea_info upstream</code> <br>(this creates and switches you to the
+        branch automatically)</li>
+      <li>Your forked repository, <b>group-data</b>, contains a directory named <b>members</b>. Navigate there and find
+        your own directory or create one if it does not already exist.</li>
+      <li>Inside your own directory's json folder, copy all the files from <b>members/template_person/</b></li>
+      <li>The following figure shows the structure of what the directories should look like. Please note that the
+        'jsons' folder contains multiple JSON files and be sure to have them all. </li>
+      <img style="max-width: 500px;" src="directory.png">
+      <li>Next, fill out the JSONs:.</li>
+      <ol type="a" >
+        <li> The "category" key inside <i>basic_info.json</i> should be one of the following: <br>"Investigator", “Graduates”, “Undergraduates”,
+          “Post Graduates”, “Post Doctorates” <mark>(spelling and case-sensitive)</mark>.</li>
+          
+          <li>Please note "current_role": "Your_role" is for your more personal role in group. <br> <b>Example:</b><br> "category":
+          "Undergraduates",<br>
+          "current_role": "Professorial Assistant"
+        </li>
+        <li>Also in <i>basic_info.json</i>, if you are currently a part of the Kerzendorf group, keep "group_end_year":
+          "Present". Otherwise, enter the year of leaving so that your name can be placed in the Alumni category</li>
+        <li>In <i>social_links.json</i>, if you do not have any of the social media accounts, you may leave them as an empty
+          string. See the figure below for reference</li>
+        <img style="max-width: 500px;" src="social.png">
+        <li>In the following JSON files - <i>awards.json, books.json, docs.json, education.json, experience.json,
+          outreach.json, projects.json</i> - you may customize them as per your needs. For example, if you have not written
+          any books, then the value of the 'section' key should be left blank <mark style="background-color: rgb(251, 246, 187);">(empty string)</mark>, as shown below. Otherwise,
+          the part below section key of json doesn't need to be changed.</li>
+        <img style="max-width: 500px;" src="books.png">
+        <li>You may also customize fields as per your wishes, as shown below.</li>
+        <img style="max-width: 500px;" src="awards.png">
+        <li>Ensure that after uploading the any media files, such as a profile picture or PDFs, you update those changes in your own JSON files in your directory as well, with the correct path pointing to the file location.</li>
+      </ol>
+      <li>Add and commit your changes with git <br><b>Example:</b><br><code>git add .<br> git commit -m "a message like my_name's changes" </code></li>
 
-      <li>It is important to note that if you are currently a part of the Kerzendorf group, then the value "group_end_year": "Present" should be entered in 'basic_info.json'. Otherwise, enter the year of leaving so that your name can be placed in the Alumni category.</li>
-      <li>Inside jsons for example'social_links.json', if you do not have any of the social media accounts, you may leave them as an empty string. For example, if you do not have a GitHub link, you may leave the value of GitHub blank (empty string). See the figure below for reference.</li>
-      <img style="max-width: 500px;" src="social.png">
+      <li>Push to upstream/main and create a Pull Request.<br><b>Example:</b> <br><code>git push upstream branch_name_like_bea_info</code></li>
 
-      <li>In the following JSON files - 'awards.json', 'books.json', 'docs.json', 'education.json', 'experience.json', 'outreach.json', 'projects.json' - you may customize them as per your needs. For example, if you have not written any books, then the value of the 'section' key should be left blank (empty string), as shown below.</li>
-      <img style="max-width: 500px;" src="books.png">
-      <li>You may also customize fields as per your wishes, as shown below.</li>
-      <img style="max-width: 500px;" src="awards.png">
-      <li>Ensure that after uploading the required files, such as a profile picture or PDFs, you update those changes in your own JSON files present in your directory as well, with the correct path pointing to the file location.</li>
-
-     <li>Finally, create a Pull Request.</li>
+      <li>Finally, create a Pull Request.</li>
     </ol>
   </div>
 </body>
