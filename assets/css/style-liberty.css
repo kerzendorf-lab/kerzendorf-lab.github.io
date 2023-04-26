@@ -19085,7 +19085,7 @@ form.search-box {
 
 /*-- banner --*/
 .w3l-banner {
-  background: url(../images/banner1.jpg) no-repeat center;
+  background: url(../../website_files/images/banner1.jpg) no-repeat center;
   -ms-background-size: cover;
   background-size: cover;
   z-index: 0;
@@ -19267,7 +19267,7 @@ span.text-italic {
 
 /*--/stats--*/
 .w3l-stats-section {
-  background: url(../images/banner.jpg) no-repeat center;
+  background: url(../../website_files/images/banner.jpg) no-repeat center;
   -ms-background-size: cover;
   background-size: cover;
   z-index: 0;
@@ -20337,7 +20337,7 @@ p.copy-footer-29 a:hover {
 
 /*-- About Page Styling --*/
 .breadcrumb-bg-about {
-  background: url(../images/banner1.jpg) no-repeat 0px 0px;
+  background: url(../../website_files/images/banner1.jpg) no-repeat 0px 0px;
   background-size: cover;
   position: relative;
   z-index: 0;
@@ -20695,7 +20695,7 @@ p.inner-page-para {
 
 /* bg with video icon */
 .w3l-covers-14 {
-  background: url("../images/banner.jpg") no-repeat center fixed;
+  background: url("../../website_files/images/banner.jpg") no-repeat center fixed;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -22123,7 +22123,7 @@ ul.category li a label {
 
 /* error page */
 .w3l-error-main .error {
-  background: url(../images/banner.jpg) no-repeat center;
+  background: url(../../website_files/images/banner.jpg) no-repeat center;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
