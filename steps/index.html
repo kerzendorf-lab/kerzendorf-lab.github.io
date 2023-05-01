@@ -90,11 +90,14 @@
       <li>Fork the repository <a href="https://github.com/kerzendorf-group/group-data"
           target="_blank">https://github.com/kerzendorf-group/group-data</a> </li>
       <li>Clone your fork to your local system through the terminal<br>
-        <code>git@github.com:kerzendorf-group/group-data.git</code> </li>
-      <li>Add remote to upstream<br><code>git remote add upstream git@github.com:kerzendorf-group/group-data.git</code> <br>(can
+        <code>git@github.com:kerzendorf-group/group-data.git</code>
+      </li>
+      <li>Add remote to upstream<br><code>git remote add upstream git@github.com:kerzendorf-group/group-data.git</code>
+        <br>(can
         copy this command directly)</li>
       <li>Create a branch then switch to your
-        branch. <br><code>git checkout -b branch_name_like_bea_info upstream</code> <br>(this creates and switches you to the
+        branch. <br><code>git checkout -b branch_name_like_bea_info upstream</code> <br>(this creates and switches you
+        to the
         branch automatically)</li>
       <li>Your forked repository, <b>group-data</b>, contains a directory named <b>members</b>. Navigate there and find
         your own directory or create one if it does not already exist.</li>
@@ -103,31 +106,39 @@
         'jsons' folder contains multiple JSON files and be sure to have them all. </li>
       <img style="max-width: 500px;" src="directory.png">
       <li>Next, fill out the JSONs:.</li>
-      <ol type="a" >
-        <li> The "category" key inside <i>basic_info.json</i> should be one of the following: <br>"Investigator", “Graduate Students”, “Undergraduate Students”,
-         “Post Doctoral Fellows” <mark>(spelling and case-sensitive)</mark>.</li>
-          
-          <li>Please note "current_role": "Your_role" is for your more personal role in group. <br> <b>Example:</b><br> "category":
+      <ol type="a">
+        <li> The "category" key inside <i>basic_info.json</i> should be one of the following: <br>"Investigator",
+          “Undergraduate Students”, “Graduate Students”, "Postdoctoral Researchers", "Researchers", "Research Software Engineers"
+          <mark>(spelling and case-sensitive)</mark>.</li>
+
+        <li>Please note "current_role": "Your_role" is for your more personal role in group. <br> <b>Example:</b><br>
+          "category":
           "Undergraduates",<br>
           "current_role": "Professorial Assistant"
         </li>
         <li>Also in <i>basic_info.json</i>, if you are currently a part of the Kerzendorf group, keep "group_end_year":
           "Present". Otherwise, enter the year of leaving so that your name can be placed in the Alumni category</li>
-        <li>In <i>social_links.json</i>, if you do not have any of the social media accounts, you may leave them as an empty
+        <li>In <i>social_links.json</i>, if you do not have any of the social media accounts, you may leave them as an
+          empty
           string. See the figure below for reference</li>
         <img style="max-width: 500px;" src="social.png">
         <li>In the following JSON files - <i>awards.json, books.json, docs.json, education.json, experience.json,
-          outreach.json, projects.json</i> - you may customize them as per your needs. For example, if you have not written
-          any books, then the value of the 'section' key should be left blank <mark style="background-color: rgb(251, 246, 187);">(empty string)</mark>, as shown below. Otherwise,
+            outreach.json, projects.json</i> - you may customize them as per your needs. For example, if you have not
+          written
+          any books, then the value of the 'section' key should be left blank <mark
+            style="background-color: rgb(251, 246, 187);">(empty string)</mark>, as shown below. Otherwise,
           the part below section key of json doesn't need to be changed.</li>
         <img style="max-width: 500px;" src="books.png">
         <li>You may also customize fields as per your wishes, as shown below.</li>
         <img style="max-width: 500px;" src="awards.png">
-        <li>Ensure that after uploading the any media files, such as a profile picture or PDFs, you update those changes in your own JSON files in your directory as well, with the correct path pointing to the file location.</li>
+        <li>Ensure that after uploading the any media files, such as a profile picture or PDFs, you update those changes
+          in your own JSON files in your directory as well, with the correct path pointing to the file location.</li>
       </ol>
-      <li>Add and commit your changes with git <br><b>Example:</b><br><code>git add .<br> git commit -m "a message like my_name's changes" </code></li>
+      <li>Add and commit your changes with git
+        <br><b>Example:</b><br><code>git add .<br> git commit -m "a message like my_name's changes" </code></li>
 
-      <li>Push to upstream/main and create a Pull Request.<br><b>Example:</b> <br><code>git push upstream branch_name_like_bea_info</code></li>
+      <li>Push to upstream/main and create a Pull Request.<br><b>Example:</b>
+        <br><code>git push upstream branch_name_like_bea_info</code></li>
 
       <li>Finally, create a Pull Request.</li>
     </ol>
