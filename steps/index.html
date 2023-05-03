@@ -83,7 +83,8 @@
     <ul>
       <li>Reply to this thread or personally message me with your github username so that it can be added on github
         repo</a> </li>
-        <li>Do not delete any key inside jsons. You may leave key's value as empty string. And for JSONs with section key, just leaving that empty will not display the information in it.</a> </li>
+      <li>Do not delete any key inside jsons. You may leave key's value as empty string. And for JSONs with section key,
+        just leaving that empty will not display the information in it.</a> </li>
 
       <h1>Detailed steps</h1>
     </ul>
@@ -91,15 +92,14 @@
       <li>Fork the repository <a href="https://github.com/kerzendorf-group/group-data"
           target="_blank">https://github.com/kerzendorf-group/group-data</a> </li>
       <li>Clone your fork to your local system through the terminal<br>
-        <code>git@github.com:kerzendorf-group/group-data.git</code>
       </li>
-      <li>Add remote to upstream<br><code>git remote add upstream git@github.com:kerzendorf-group/group-data.git</code>
-        <br>(can
-        copy this command directly)</li>
-      <li>Create a branch then switch to your
-        branch. <br><code>git checkout -b branch_name_like_bea_info upstream</code> <br>(this creates and switches you
-        to the
-        branch automatically)</li>
+      <li>Run <code>cd group-data</code>
+      </li>
+      <li>Create a new branch Eg: <code>git branch my-data</code><br> You may use any branch name instead of my-data
+      </li>
+      <li>Switch to new branch <code>git checkout my-data</code>
+      </li>
+
       <li>Your forked repository, <b>group-data</b>, contains a directory named <b>members</b>. Navigate there and find
         your own directory or create one if it does not already exist.</li>
       <li>Inside your own directory's json folder, copy all the files from <b>members/template_person/</b></li>
@@ -108,14 +108,17 @@
       <img style="max-width: 500px;" src="directory.png">
       <li>Next, fill out the JSONs:.</li>
       <ol type="a">
+        <li>Ensure that the profile picture you upload is <mark>square</mark></li>
         <li> The "category" key inside <i>basic_info.json</i> should be one of the following: <br>"Investigator",
-          “Undergraduate Students”, “Graduate Students”, "Postdoctoral Researchers", "Researchers", "Research Software Engineers"
-          <mark>(spelling and case-sensitive)</mark>.</li>
+          “Undergraduate Students”, “Graduate Students”, "Postdoctoral Researchers", "Researchers", "Research Software
+          Engineers"
+          <mark>(spelling and case-sensitive)</mark>.
+        </li>
 
-        <li>Please note "current_role": "Your_role" is for your more personal role in group. <br> <b>Example:</b><br>
+        <li>Please note "primary_role": "Your_role" is for your more personal role in group. <br> <b>Example:</b><br>
           "category":
           "Undergraduates",<br>
-          "current_role": "Professorial Assistant"
+          "primary_role": "Professorial Assistant"
         </li>
         <li>Also in <i>basic_info.json</i>, if you are currently a part of the Kerzendorf group, keep "group_end_year":
           "Present". Otherwise, enter the year of leaving so that your name can be placed in the Alumni category</li>
@@ -136,12 +139,26 @@
           in your own JSON files in your directory as well, with the correct path pointing to the file location.</li>
       </ol>
       <li>Add and commit your changes with git
-        <br><b>Example:</b><br><code>git add .<br> git commit -m "a message like my_name's changes" </code></li>
+        <br><b>Example:</b><br><code>git add .</code><br>
+        Check status of changed files <br><code>git status</code><br>Commit those changes
+        <br><code>git commit -m "a message like my_name's changes" </code>
+      </li>
 
       <li>Push to upstream/main and create a Pull Request.<br><b>Example:</b>
-        <br><code>git push upstream branch_name_like_bea_info</code></li>
+        <br><code>git push -u origin my-data</code>
+      </li>
+      <li>Finally, to create a Pull Request: either click on <b>Compare & pull request</b> or go to Pull requests tab on
+        right of code and click on <b>New pull request</b></li>
+      <ul>
+        <li>Select kerzendorf-group/group-data in <b>base repository</b></li>
+        <li>Select incoming changes in <b>base</b></li>
+        <li>Select your cloned repository in <b>head</b></li>
+        <li>Select newly created branch (Eg: my-data) inside <b>compare</b></li>
+        <p style="font-size: large">See below image for reference. </p>
+        <img style="max-width: 700px;" src="pullrequest.png">
+        <li>Click on <b>Create pull request</b> button</li>
+      </ul>
 
-      <li>Finally, create a Pull Request.</li>
     </ol>
   </div>
 </body>
