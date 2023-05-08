@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Adding Your Data for Hosting on the Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+    }
+
+    .instructions {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 50px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      border-radius: 10px;
+    }
+
+    h2 {
+      font-size: 36px;
+      margin-top: 0;
+      margin-bottom: 20px;
+      text-align: center;
+      color: #333;
+      text-shadow: 2px 2px 0 #fff;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    ol {
+      margin: 0;
+      padding: 0 0 0 40px;
+    }
+
+    li {
+      margin-bottom: 10px;
+      font-size: 18px;
+      line-height: 1.5;
+      color: #555;
+    }
+
+    code {
+      background-color: #f1f1f1;
+      border-radius: 3px;
+      padding: 2px 5px;
+      font-size: 16px;
+      color: #333;
+    }
+
+    p {
+      margin-top: 20px;
+      font-size: 16px;
+      line-height: 1.5;
+      color: #777;
+    }
+
+    a {
+      color: #c73866;
+      text-decoration: none;
+      font-weight: bold;
+      border-bottom: 2px solid #c73866;
+      transition: border-bottom 0.2s;
+    }
+
+    a:hover {
+      border-bottom: 2px solid #333;
+    }
+
+    .note {
+      background-color: #c73866;
+      color: #fff;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="instructions">
+    <h2>How to Add Your Data for Hosting on the Website</h2>
+    <ul>
+      <li>Reply to this thread or personally message me with your github username so that it can be added on github
+        repo</a> </li>
+      <li>Do not delete any key inside jsons. You may leave key's value as empty string. And for JSONs with section key,
+        just leaving that empty will not display the information in it.</a> </li>
+
+      <h1>Detailed steps</h1>
+    </ul>
+    <ol>
+      <li>Fork the repository <a href="https://github.com/kerzendorf-group/group-data"
+          target="_blank">https://github.com/kerzendorf-group/group-data</a> </li>
+      <li>Clone your fork to your local system through the terminal<br>
+      </li>
+      <li>Run <code>cd group-data</code>
+      </li>
+      <li>Create a new branch Eg: <code>git branch my-data</code><br> You may use any branch name instead of my-data
+      </li>
+      <li>Switch to new branch <code>git checkout my-data</code>
+      </li>
+
+      <li>Your forked repository, <b>group-data</b>, contains a directory named <b>members</b>. Navigate there and find
+        your own directory or create one if it does not already exist.</li>
+      <li>Inside your own directory's json folder, copy all the files from <b>members/template_person/</b></li>
+      <li>The following figure shows the structure of what the directories should look like. Please note that the
+        'jsons' folder contains multiple JSON files and be sure to have them all. </li>
+      <img style="max-width: 500px;" src="directory.png">
+      <li>Next, fill out the JSONs:.</li>
+      <ol type="a">
+        <li>Ensure that the profile picture you upload is <mark>square</mark></li>
+        <li> The "category" key inside <i>basic_info.json</i> should be one of the following: <br>"Investigator",
+          “Undergraduate Students”, “Graduate Students”, "Postdoctoral Researchers", "Researchers", "Research Software
+          Engineers"
+          <mark>(spelling and case-sensitive)</mark>.
+        </li>
+
+        <li>Please note "primary_role": "Your_role" is for your more personal role in group. <br> <b>Example:</b><br>
+          "category":
+          "Undergraduates",<br>
+          "primary_role": "Professorial Assistant"
+        </li>
+        <li>Also in <i>basic_info.json</i>, if you are currently a part of the Kerzendorf group, keep "group_end_year":
+          "Present". Otherwise, enter the year of leaving so that your name can be placed in the Alumni category</li>
+        <li>In <i>social_links.json</i>, if you do not have any of the social media accounts, you may leave them as an
+          empty
+          string. See the figure below for reference</li>
+        <img style="max-width: 500px;" src="social.png">
+        <li>In the following JSON files - <i>awards.json, books.json, docs.json, education.json, experience.json,
+            outreach.json, projects.json</i> - you may customize them as per your needs. For example, if you have not
+          written
+          any books, then the value of the 'section' key should be left blank <mark
+            style="background-color: rgb(251, 246, 187);">(empty string)</mark>, as shown below. Otherwise,
+          the part below section key of json doesn't need to be changed.</li>
+        <img style="max-width: 500px;" src="books.png">
+        <li>You may also customize fields as per your wishes, as shown below.</li>
+        <img style="max-width: 500px;" src="awards.png">
+        <li>Ensure that after uploading the any media files, such as a profile picture or PDFs, you update those changes
+          in your own JSON files in your directory as well, with the correct path pointing to the file location.</li>
+      </ol>
+      <li>Add and commit your changes with git
+        <br><b>Example:</b><br><code>git add .</code><br>
+        Check status of changed files <br><code>git status</code><br>Commit those changes
+        <br><code>git commit -m "a message like my_name's changes" </code>
+      </li>
+
+      <li>Push to upstream/main and create a Pull Request.<br><b>Example:</b>
+        <br><code>git push -u origin my-data</code>
+      </li>
+      <li>Finally, to create a Pull Request: either click on <b>Compare & pull request</b> or go to Pull requests tab on
+        right of code and click on <b>New pull request</b></li>
+      <ul>
+        <li>Select kerzendorf-group/group-data in <b>base repository</b></li>
+        <li>Select incoming changes in <b>base</b></li>
+        <li>Select your cloned repository in <b>head</b></li>
+        <li>Select newly created branch (Eg: my-data) inside <b>compare</b></li>
+        <p style="font-size: large">See below image for reference. </p>
+        <img style="max-width: 700px;" src="pullrequest.png">
+        <li>Click on <b>Create pull request</b> button</li>
+      </ul>
+
+    </ol>
+  </div>
+</body>
+</html>
