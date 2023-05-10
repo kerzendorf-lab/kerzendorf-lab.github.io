@@ -19087,12 +19087,12 @@ form.search-box {
 .w3l-banner {
   background: url(../../website_files/images/banner1.jpg) no-repeat center;
   -ms-background-size: cover;
-  background-size: 80%;
+  background-size: cover;
   z-index: 0;
   position: relative;
   display: grid;
   align-items: center;
-  height: 600px;
+  height: 400px;
 }
 
 
@@ -20327,16 +20327,17 @@ p.copy-footer-29 a:hover {
 
 
 /*-- About Page Styling --*/
-.breadcrumb-bg-about {
+.breadcrumb-bg-people {
   background: url(../../website_files/images/banner1.jpg) no-repeat 0px 0px;
   background-size: cover;
   position: relative;
   z-index: 0;
+  height: 290px;
 }
 
-.breadcrumb-bg-about:before {
+.breadcrumb-bg-people:before {
   content: "";
-  background: rgba(103, 58, 183, 0.8);
+  background: rgba(103, 58, 183, 0.2);
   position: absolute;
   top: 0;
   bottom: 0;
@@ -20344,6 +20345,41 @@ p.copy-footer-29 a:hover {
   right: 0;
   z-index: -1;
 }
+@media screen and (max-width: 480px) {
+  .breadcrumb-bg-people {
+  background: url(../../website_files/images/banner1.jpg) no-repeat 0px 0px;
+  background-size: cover;
+  position: relative;
+  z-index: 0;
+  }
+  }
+/*-- Research and contact --*/
+.breadcrumb-bg-about {
+  background: url(../../website_files/images/banner1.jpg) no-repeat 0px 0px;
+  background-size: cover;
+  position: relative;
+  z-index: 0;
+
+}
+
+.breadcrumb-bg-about:before {
+  content: "";
+  background: rgba(103, 58, 183, 0.2);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+
+
+
+
+
+
+
 
 p.inner-page-para {
   color: #fff;
