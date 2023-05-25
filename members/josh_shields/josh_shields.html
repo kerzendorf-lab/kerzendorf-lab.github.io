@@ -840,51 +840,11 @@
 
 
 
-    <!-- posters and media>
+<!-- posters and media-->
+
 
     
-    <h2 style="text-align:center; padding-top:5%;">Posters</h2>
-    <div class="slider">
-        
-        <div class="mySlides">
-
-            <h3 style="text-align: center;"><built-in method title of str object at 0x7f44620b1870></h3>
-            <iframe src="" style="width:100%"></iframe>
-            <p style="text-align:center; "><b style="color: black;"><i></i></b></p>
-            <p style="text-align:center; "></p>
-        </div>
-        
-        <div class="mySlides">
-
-            <h3 style="text-align: center;"> Poster</h3>
-            <iframe src="documents/teff_rad_contours.pdf" style="width:100%"></iframe>
-            <p style="text-align:center; "><b style="color: black;"><i>This is caption</i></b></p>
-            <p style="text-align:center; ">About poster</p>
-        </div>
-        
-        <div class="mySlides">
-
-            <h3 style="text-align: center;"> title</h3>
-            <iframe src="documents/teff_rad_contours.pdf" style="width:100%"></iframe>
-            <p style="text-align:center; "><b style="color: black;"><i>caption</i></b></p>
-            <p style="text-align:center; ">about</p>
-        </div>
-        
-        <a class="prev" onclick="plusSlides(-1)">❮</a>
-        <a class="next" onclick="plusSlides(1)">❯</a>
-    </div>
-    
-    <!--end posters and media-->
-
-<!-- Posters-->
-
-    
-<!-- Posters end-->
-
-
-
-
-
+<!-- posters end-->
 
 
      <!-- footer block -->
@@ -930,6 +890,94 @@
 
 
     <!-- Js scripts -->
+
+<!-- Include PDF.js library -->
+<script src="../../assets/js/pdfjs-3/build/pdf.js"></script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const carousel = document.querySelector(".carousel");
+    const slides = carousel.querySelectorAll(".slide");
+
+    let currentSlide = 0;
+
+    function showSlide(slideIndex) {
+      // Hide all slides
+      slides.forEach((slide) => {
+        slide.style.display = "none";
+      });
+
+      // Show the current slide
+      slides[slideIndex].style.display = "block";
+
+      // Render PDF if the slide contains an embed element
+      const embedElement = slides[slideIndex].querySelector("embed");
+      if (embedElement) {
+        const pdfUrl = embedElement.getAttribute("src");
+
+        // Use PDF.js to render the PDF
+        const canvas = document.createElement("canvas");
+        slides[slideIndex].appendChild(canvas);
+
+        PDFJS.getDocument(pdfUrl)
+          .then(function (pdf) {
+            return pdf.getPage(1);
+          })
+          .then(function (page) {
+            const viewport = page.getViewport({ scale: 1 });
+            const context = canvas.getContext("2d");
+            canvas.height = viewport.height;
+            canvas.width = viewport.width;
+
+            const renderContext = {
+              canvasContext: context,
+              viewport: viewport,
+            };
+
+            page.render(renderContext);
+          });
+      }
+    }
+
+    function showNextSlide() {
+      currentSlide = (currentSlide + 1) % slides.length;
+      showSlide(currentSlide);
+    }
+
+    // Show the first slide
+    showSlide(currentSlide);
+
+    // Example: Attach click event to a next button
+    const nextButton = document.querySelector("#nextButton");
+    nextButton.addEventListener("click", showNextSlide);
+  });
+</script>
+
+    <!-- move top -->
+    <button onclick="topFunction()" id="movetop" title="Go to top">
+        <span class="fas fa-level-up-alt" aria-hidden="true"></span>
+    </button>
+    <script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("movetop").style.display = "block";
+            } else {
+                document.getElementById("movetop").style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
     <!-- move top -->
     <button onclick="topFunction()" id="movetop" title="Go to top">
         <span class="fas fa-level-up-alt" aria-hidden="true"></span>
