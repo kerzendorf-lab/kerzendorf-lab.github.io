@@ -11708,10 +11708,11 @@ fieldset:disabled .btn {
 
 
 
+/* Grey to black*/
 :root {
   --primary-color: #673ab7;
   --secondary-color: #00c16e;
-  --font-color: #707070;
+  --font-color: black;
   --bg-color: #fff;
   --heading-color: #404044;
   --footer-color: #f7f7f7;
