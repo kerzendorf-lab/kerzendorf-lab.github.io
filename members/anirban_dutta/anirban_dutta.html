@@ -198,26 +198,27 @@
                                             aria-hidden="true"></span></a>
                                     
                                     
-                                    <a href="https://github.com/Knights-Templars" target="_blank"><span class="fab fa-github-square"
-                                            aria-hidden="true"></span></a>
+                                    <a href="https://github.com/Knights-Templars" target="_blank"><span
+                                            class="fab fa-github-square" aria-hidden="true"></span></a>
                                     
                                     
-                                    <a href="https://twitter.com/Anirban29Dutta" target="_blank"><span class="fab fa-twitter-square"
-                                            aria-hidden="true"></span></a>
+                                    <a href="https://twitter.com/Anirban29Dutta" target="_blank"><span
+                                            class="fab fa-twitter-square" aria-hidden="true"></span></a>
                                     
                                     
-                                    <a href="https://www.linkedin.com/in/anirban-dutta-6a0377238/" target="_blank"><span class="fab fa-linkedin-in"
-                                            aria-hidden="true"></span></a>
+                                    <a href="https://www.linkedin.com/in/anirban-dutta-6a0377238/" target="_blank"><span
+                                            class="fab fa-linkedin-in" aria-hidden="true"></span></a>
                                     
                                     
-                                    <a href="https://orcid.org/0000-0002-7708-3831" target="_blank"><span class="fa fa-newspaper"
-                                            aria-hidden="true"></span></a>
+
+                                    <a href="https://orcid.org/0000-0002-7708-3831" target="_blank"><span
+                                            class="fa fa-newspaper" aria-hidden="true"></span></a>
                                     
                                 </div>
                                 <!-- //contact address -->
 
                             </div>
-                            
+
                             
 
                         </section>
@@ -228,13 +229,13 @@
     </section>
     <!-- About Section -->
 
-    
-<style>
-    th, td {
-  color: var(--font-color);
-}
 
-</style>
+    <style>
+        th,
+        td {
+            color: var(--font-color);
+        }
+    </style>
 
 
 
@@ -249,36 +250,54 @@
                 </tr>
             </thead>
             <tbody>
+                
                 <tr>
-                    <th scope="row">Project Title:</th>
+                    <th scope="row">Project&#40;s&#41;:</th>
                     <td>Non-LTE modeling of supernova spectra</td>
 
                 </tr>
+                
+                
+
                 <tr>
                     <th scope="row">Organization:</th>
                     <td>Kerzendorf Group</td>
 
                 </tr>
+                
+                
+
                 <tr>
                     <th scope="row">Primary Role:</th>
                     <td>present role</td>
 
                 </tr>
+                
+                
+
                 <tr>
                     <th scope="row">Secondary Role:</th>
                     <td>Secondary Role Here</td>
 
                 </tr>
+                
+                
+
                 <tr>
                     <th scope="row">Current Institute:</th>
                     <td>University name</td>
 
                 </tr>
+                
+                
+
                 <tr>
                     <th scope="row">Duration:</th>
                     <td>2019-Present</td>
 
                 </tr>
+                
+
             </tbody>
         </table>
     </section>
@@ -287,39 +306,39 @@
 
 
     <section style="padding-left: 10%; padding-right:10%;">
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-</section>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </section>
 
 
-<section style="padding-left: 10%; padding-right:10%;">
-	
-	          
-	
-	
-	
-	          
-	
-</section>
+    <section style="padding-left: 10%; padding-right:10%;">
+        
+        
+        
+        
+        
+        
+        
+    </section>
 
 
     <!--section class="w3l-contacts-12">
@@ -369,15 +388,15 @@
 
 
 
-<!-- posters and media-->
+    <!-- posters and media-->
 
+    
 
+    <!-- posters end-->
 
-<!-- posters end-->
+    <br><br><br><br>
 
- <br><br><br><br>
-
-     <!-- footer block -->
+    <!-- footer block -->
     <footer class="w3l-footer-29-main">
         <div class="footer-29 pt-5 pb-4">
             <div class="container pt-md-4">
@@ -421,67 +440,67 @@
 
     <!-- Js scripts -->
 
-<!-- Include PDF.js library -->
-<script src="../../assets/js/pdfjs-3/build/pdf.js"></script>
+    <!-- Include PDF.js library -->
+    <script src="../../assets/js/pdfjs-3/build/pdf.js"></script>
 
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const carousel = document.querySelector(".carousel");
-    const slides = carousel.querySelectorAll(".slide");
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const carousel = document.querySelector(".carousel");
+            const slides = carousel.querySelectorAll(".slide");
 
-    let currentSlide = 0;
+            let currentSlide = 0;
 
-    function showSlide(slideIndex) {
-      // Hide all slides
-      slides.forEach((slide) => {
-        slide.style.display = "none";
-      });
+            function showSlide(slideIndex) {
+                // Hide all slides
+                slides.forEach((slide) => {
+                    slide.style.display = "none";
+                });
 
-      // Show the current slide
-      slides[slideIndex].style.display = "block";
+                // Show the current slide
+                slides[slideIndex].style.display = "block";
 
-      // Render PDF if the slide contains an embed element
-      const embedElement = slides[slideIndex].querySelector("embed");
-      if (embedElement) {
-        const pdfUrl = embedElement.getAttribute("src");
+                // Render PDF if the slide contains an embed element
+                const embedElement = slides[slideIndex].querySelector("embed");
+                if (embedElement) {
+                    const pdfUrl = embedElement.getAttribute("src");
 
-        // Use PDF.js to render the PDF
-        const canvas = document.createElement("canvas");
-        slides[slideIndex].appendChild(canvas);
+                    // Use PDF.js to render the PDF
+                    const canvas = document.createElement("canvas");
+                    slides[slideIndex].appendChild(canvas);
 
-        PDFJS.getDocument(pdfUrl)
-          .then(function (pdf) {
-            return pdf.getPage(1);
-          })
-          .then(function (page) {
-            const viewport = page.getViewport({ scale: 1 });
-            const context = canvas.getContext("2d");
-            canvas.height = viewport.height;
-            canvas.width = viewport.width;
+                    PDFJS.getDocument(pdfUrl)
+                        .then(function (pdf) {
+                            return pdf.getPage(1);
+                        })
+                        .then(function (page) {
+                            const viewport = page.getViewport({ scale: 1 });
+                            const context = canvas.getContext("2d");
+                            canvas.height = viewport.height;
+                            canvas.width = viewport.width;
 
-            const renderContext = {
-              canvasContext: context,
-              viewport: viewport,
-            };
+                            const renderContext = {
+                                canvasContext: context,
+                                viewport: viewport,
+                            };
 
-            page.render(renderContext);
-          });
-      }
-    }
+                            page.render(renderContext);
+                        });
+                }
+            }
 
-    function showNextSlide() {
-      currentSlide = (currentSlide + 1) % slides.length;
-      showSlide(currentSlide);
-    }
+            function showNextSlide() {
+                currentSlide = (currentSlide + 1) % slides.length;
+                showSlide(currentSlide);
+            }
 
-    // Show the first slide
-    showSlide(currentSlide);
+            // Show the first slide
+            showSlide(currentSlide);
 
-    // Example: Attach click event to a next button
-    const nextButton = document.querySelector("#nextButton");
-    nextButton.addEventListener("click", showNextSlide);
-  });
-</script>
+            // Example: Attach click event to a next button
+            const nextButton = document.querySelector("#nextButton");
+            nextButton.addEventListener("click", showNextSlide);
+        });
+    </script>
 
     <!-- move top -->
     <button onclick="topFunction()" id="movetop" title="Go to top">
