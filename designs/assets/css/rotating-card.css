@@ -52,6 +52,7 @@
 	top: 0;
 	left: 0;
 	background-color: #FFF;
+    border: 2px solid black;
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.14);
 }
 
@@ -71,8 +72,8 @@
 
 .back .btn-simple{
     position: absolute;
-    left: 0;
-    bottom: 4px;
+    left: 115px;
+    bottom: 0px;
 }
 /*        Style       */
 
@@ -81,14 +82,15 @@
     background: none repeat scroll 0 0 #FFFFFF;
     border-radius: 4px;
     color: #444444;
+    display: grid;
 }
 .card-container, .front, .back {
-	width: 100%;
+	width:  100%;
 	height: 420px;
 	border-radius: 4px;
 }
 .card .cover{
-    height: 105px;
+    height: 75px;
     overflow: hidden;
     border-radius: 4px 4px 0 0;
 }
@@ -115,13 +117,19 @@
     padding: 10px 20px 20px;
 }
 .card .content .main {
-    min-height: 160px;
+    font-size: 16px;
+    line-height: 18px;
+    margin: 5px 0 5px 0;
+    text-align: center;
+    width: 100%;
+	height: 130px;
+    text-transform: capitalize;
 }
 .card .back .content .main {
     height: 215px;
 }
 .card .name {
-    font-size: 22px;
+    font-size: 20px;
     line-height: 28px;
     margin: 10px 0 0;
     text-align: center;
@@ -135,13 +143,13 @@
 .card .profession{
     color: #999999;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 .card .footer {
     border-top: 1px solid #EEEEEE;
     color: #999999;
-    margin: 30px 0 0;
-    padding: 10px 0 0;
+    margin: 100px 0 0;
+    padding: 5px 0 0;
     text-align: center;
 }
 .card .footer .social-links{
@@ -167,8 +175,8 @@
 }
 
 .card .stats-container{
-	width: 100%;
-	margin-top: 50px;
+    padding-top: 40px;
+	width: 250px;
 }
 .card .stats{
 	display: block;
@@ -185,7 +193,7 @@
 }
 .card .stats h4{
 	font-weight: 300;
-	margin-bottom: 5px;
+	margin-bottom: 155px;
 }
 .card .stats p{
 	color: #777777;
@@ -286,5 +294,20 @@
     .card-container.manual-flip.hover .back{
         z-index: 5;
         visibility: visible;
+    }
+}
+
+@media (max-width: 768px) {
+    .card-container, .front, .back {
+        width: 300px;
+        height: 420px;
+    }
+}
+
+/* CSS for larger screens */
+@media (min-width: 769px) {
+    .card-container, .front, .back {
+        width: 300px;
+        height: 420px;
     }
 }
