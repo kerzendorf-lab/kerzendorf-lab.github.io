@@ -1,0 +1,26 @@
+{
+    "title": "A comprehensive SN Ia companion search in SNR 0509-67.5",
+    "author_id": "josh_shields",
+    "article_id": "snr0509_josh_paper",
+    "display": true,
+    "article_date": "05-28-2023",
+    "category": "Astrophysical Transients",
+    "tags": ["research", "news"],
+    "short_description": "A search for a surviving companion to a 400 year old type Ia supernova in the Large Magellanic Cloud",
+    "long_description": "The community agrees that Type Ia supernovae arise from Carbon/Oxygen white dwarfs undergoing thermonuclear runaway. However, the full progenitor system and the process that prompts the white dwarf to explode remain unknown. Most current models suggest that the white dwarf explodes because of interaction with a binary companion which may survive the process and remain within the resulting remnant of the exploded star. Furthermore, both the pre-supernova interaction process and the explosion of the primary are expected to imprint a significant departure from ordinary stellar radii and temperatures onto the secondary, making the star identifiable against the unrelated stellar population. Identification of a surviving companion inside an SN Ia remnant might confirm a specific corresponding SN Ia progenitor channel based on the identity of the companion. We conducted a surviving companion search of the Type Ia remnant SNR 0509−67.5based in the Large Magellanic Cloud. The well-constrained distance to and foreground extinction of the Large Magellanic Cloud allow for Bayesian inference of stellar parameters with low correlation and uncertainties. We present a deep catalog of fully characterized stars interior to SNR 0509−67.5 with radii, effective temperatures, and metallicities inferred using combined Hubble Space Telescope photometric observations across multiple visits. We then compile a list of surviving companion models appropriate for the age of the remnant (roughly 400 years after the explosion). We compare these predictions with the inferred stellar parameters and conclude that none of the stars are consistent with the predicted signatures of a surviving companion.",
+    "cover_image": "website_files/images/article_content/snr0509_viz.png",
+    "content": {
+        "para1": "An example outcome of the fitting process for one of the stars in the search region. The blue crosses show the photometric observations with the vertical spread showing observational uncertainty, and the horizontal spread shows the width of the filter used for the observation, corresponding to the rough portion of the spectrum probed by the observation. The transmission curve of each filters is shown in dashed purple. The black and grey regions show a distribution of spectra created by sampling the posterior distribution of constrained stellar parameters.",
+        "img1": "website_files/images/article_content/snr0509_example_fit.png",
+        "para2": "Radius vs. Effective Temperature and metallicity fits of stars within 4.2 arcsec of the hydrodynamic center of SNR 0509−67.5, the sample of potential surviving companion stars. The gray crosses show the surrounding control sample of nearby stars which we used to estimate the underlying temperature-radius distribution of the local stellar population, shown by the contours. The purple crosses show the three stars identified in A22. The red X markers show surviving companion models from we considered that were close enough in this space enough to be compared, with the other models too high in temperature or large in radius to be placed within the bounds of the figure.",
+        "img2": "website_files/images/article_content/teff_rad_contours.png"
+    },
+    "people_involved_ids": [
+        "josh_shields",
+        "wolfgang_kerzendorf",
+        "sofia_biriouk",
+        "hayden_monk"
+    ],
+    "links": [],
+    "twitter": "None"
+}
