@@ -1,0 +1,23 @@
+{
+    "title": "European Space Agency Research Internship",
+    "author_id": "vicente_amado",
+    "article_id": "ESA_internship_vicente",
+    "display": true,
+    "article_date": "06-15-2023",
+    "category": "News",
+    "tags": ["news",
+            "research",
+            "Internship"],
+    "short_description": "A research internship with the Data Science department at the European Space Agency Center near Madrid, Spain.",
+    "long_description": "",
+    "cover_image": "website_files/images/article_content/esa_internship.png",
+    "content": {
+        "para1": "The Deepthought Initiative (DTI) collaboration applies computational techniques and tools to the big data that is the literature in scientific research. Specifically, DTI focuses on understanding the astrophysics literature by leveraging machine learning. My research focuses on tracking astrophysics publications and identifying all astronomers in the global community from publications on arXiv. My work in computational meta-research has benefited from being surrounded by astrophysicists from our research group, ensuring that the tools we are researching are directly applicable to astrophysicists. However, furthering my research of meta-research in astrophysics will benefit from understanding the needs of different stakeholders in the astrophysics community. Visiting ESAC will allow me to experience a world leading space agency's current research systems and future needs by directly participating in a proposal cycle and working with the librarians at ESA."
+    },
+    "people_involved_ids": [
+        "vicente_amado",
+        "wolfgang_kerzendorf"
+    ],
+    "links": [],
+    "twitter": "None"
+}
