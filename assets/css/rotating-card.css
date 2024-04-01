@@ -84,9 +84,10 @@
     color: #444444;
     display: grid;
 }
+
 .card-container, .front, .back {
 	width:  100%;
-	height: 420px;
+	height: 330px;
 	border-radius: 4px;
 }
 .card .cover{
@@ -300,7 +301,7 @@
 @media (max-width: 768px) {
     .card-container, .front, .back {
         width: 300px;
-        height: 420px;
+        height: 330px;
     }
 }
 
@@ -308,6 +309,6 @@
 @media (min-width: 769px) {
     .card-container, .front, .back {
         width: 300px;
-        height: 420px;
+        height: 330px;
     }
 }

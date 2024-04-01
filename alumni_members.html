@@ -31,6 +31,20 @@
             background-color: rgb(177, 143, 232);
             inline-size: 100%;
         }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px; /* Increased padding for better spacing */
+            text-align: left;
+            font-size: 18px; /* Increased font size for table cells */
+        }
+        th {
+            background-color: #f2f2f2; /* Background color for table header */
+            font-size: 20px; /* Increased font size for table headers */
+        }
     </style>
     <!-- Rotating card-->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
@@ -214,375 +228,38 @@
             <div class="cardtainer" style="padding-top: 3%;">
                 <div class="row">
                     <div class="col-sm-10 col-sm-offset-1">
-                        
-                        <div class="col-md-4 col-sm-6">
-                            <div class="card-container manual-flip">
-                                <div class="card">
-                                    <div class="front">
-                                        <div class="cover">
-                                            <a
-                                                href="members/isaac_smith/isaac_smith.html">
-                                                <img
-                                                    src="members/isaac_smith/media/images/cover.jpg">
-                                            </a>
-                                        </div>
-                                        <div class="user">
-                                            <a
-                                                href="members/isaac_smith/isaac_smith.html">
-                                                
-                                                <img class="img-circle"
-                                                    src="members/isaac_smith/media/images/isaac_image.jpg">
-                                                
-                                            </a>
-                                        </div>
-                                        <div class="content">
-                                            <div class="main">
-                                                <h3 class="name">
-                                                    <a href="members/isaac_smith/isaac_smith.html">
-                                                        Isaac Smith</a>
-                                                </h3>
-                                                
-                                                <p class="profession">Undergraduate</p>
-                                                
-                                                
-                                                <br><br>
-                                                <div class="social-icon w3l-contacts-12">
-                                                    <div class="stats-container">
-                                                        <div class="social-links text-center">
-                                                            
-                                                        
-                                                            
-                                                            
-                                                            
-                                                            
-                                                            <a href="https://www.github.com/smithis7" target="_blank">
-                                                                <i class="fa fa-github"></i></a>
-                                                            
-                                                            
-                                                            <a href="mailto:smithis7@msu.edu" target="_blank">
-                                                                <i class="fa fa-envelope"></i></a>
-                                                            
-                                                            
-                                                                <a href="https://orcid.org/0000-0003-0440-3918"
-                                                                    target="_blank">
-                                                                    <i class="fa fa-newspaper"></i></a>
-                                                            
-                                                        
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="footer">
-                                                <button class="btn btn-simple" onclick="rotateCard(this)">
-                                                    <i class="fa fa-mail-forward">More</i>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- end front panel -->
-                                    <div class="back">
-                                        <!-- <div class="back">
-                                        <div class="header">
-                                            
-                                            <h5 class="motto"></h5>
-                                            
-                                        </div>
-                                        <div class="content">
-                                            <div class="main">
-                                                <h4 class="text-center">Areas
-                                                    of Interests</h4>
-                                                <p class="text-center"></p>
-
-                                                <br><br><br><br>
-                                                
-                                                <p class="text-center external_affiliation"
-                                                    style="color:black;  line-height: 16px;"> </p>
-                                                
-                                            </div>
-                                        </div> -->
-                                        <div class="footer">
-                                            <button class="btn btn-simple" rel="tooltip" title
-                                                onclick="rotateCard(this)" data-original-title="Flip Card">
-                                                <i class="fa fa-reply">Back</i>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="col-md-4 col-sm-6">
-                            <div class="card-container manual-flip">
-                                <div class="card">
-                                    <div class="front">
-                                        <div class="cover">
-                                            <a
-                                                href="members/kevin_cawley/kevin_cawley.html">
-                                                <img
-                                                    src="members/kevin_cawley/media/images/cover.jpg">
-                                            </a>
-                                        </div>
-                                        <div class="user">
-                                            <a
-                                                href="members/kevin_cawley/kevin_cawley.html">
-                                                
-                                                <img class="img-circle"
-                                                    src="members/kevin_cawley/media/images/KevinCawleyFall2022.jpg">
-                                                
-                                            </a>
-                                        </div>
-                                        <div class="content">
-                                            <div class="main">
-                                                <h3 class="name">
-                                                    <a href="members/kevin_cawley/kevin_cawley.html">
-                                                        Kevin Cawley</a>
-                                                </h3>
-                                                
-                                                <p class="profession">Undergraduate</p>
-                                                
-                                                
-                                                <p class="text-center" style="color:black; line-height: 16px;">Tardis Cuda
-                                                </p>
-                                                
-                                                <br><br>
-                                                <div class="social-icon w3l-contacts-12">
-                                                    <div class="stats-container">
-                                                        <div class="social-links text-center">
-                                                            
-                                                        
-                                                            
-                                                            
-                                                            
-                                                            
-                                                            <a href="https://www.github.com/KevinCawley" target="_blank">
-                                                                <i class="fa fa-github"></i></a>
-                                                            
-                                                            
-                                                            <a href="mailto:cawleyke@msu.edu" target="_blank">
-                                                                <i class="fa fa-envelope"></i></a>
-                                                            
-                                                            
-                                                        
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="footer">
-                                                <button class="btn btn-simple" onclick="rotateCard(this)">
-                                                    <i class="fa fa-mail-forward">More</i>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- end front panel -->
-                                    <div class="back">
-                                        <!-- <div class="back">
-                                        <div class="header">
-                                            
-                                            <h5 class="motto"></h5>
-                                            
-                                        </div>
-                                        <div class="content">
-                                            <div class="main">
-                                                <h4 class="text-center">Areas
-                                                    of Interests</h4>
-                                                <p class="text-center"></p>
-
-                                                <br><br><br><br>
-                                                
-                                                <p class="text-center external_affiliation"
-                                                    style="color:black;  line-height: 16px;"> </p>
-                                                
-                                            </div>
-                                        </div> -->
-                                        <div class="footer">
-                                            <button class="btn btn-simple" rel="tooltip" title
-                                                onclick="rotateCard(this)" data-original-title="Flip Card">
-                                                <i class="fa fa-reply">Back</i>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="col-md-4 col-sm-6">
-                            <div class="card-container manual-flip">
-                                <div class="card">
-                                    <div class="front">
-                                        <div class="cover">
-                                            <a
-                                                href="members/iliomar_rodriguez_ramos/iliomar_rodriguez_ramos.html">
-                                                <img
-                                                    src="members/iliomar_rodriguez_ramos/media/images/cover.jpg">
-                                            </a>
-                                        </div>
-                                        <div class="user">
-                                            <a
-                                                href="members/iliomar_rodriguez_ramos/iliomar_rodriguez_ramos.html">
-                                                
-                                                <img class="img-circle"
-                                                    src="members/iliomar_rodriguez_ramos/media/images/iliomar_ft.jpg">
-                                                
-                                            </a>
-                                        </div>
-                                        <div class="content">
-                                            <div class="main">
-                                                <h3 class="name">
-                                                    <a href="members/iliomar_rodriguez_ramos/iliomar_rodriguez_ramos.html">
-                                                        Iliomar Rodriguez-Ramos</a>
-                                                </h3>
-                                                
-                                                
-                                                <p class="text-center" style="color:black; line-height: 16px;">Exploring The Complex Structures Of Ancient Stars
-                                                </p>
-                                                
-                                                <br><br>
-                                                <div class="social-icon w3l-contacts-12">
-                                                    <div class="stats-container">
-                                                        <div class="social-links text-center">
-                                                            
-                                                        
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="footer">
-                                                <button class="btn btn-simple" onclick="rotateCard(this)">
-                                                    <i class="fa fa-mail-forward">More</i>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- end front panel -->
-                                    <div class="back">
-                                        <!-- <div class="back">
-                                        <div class="header">
-                                            
-                                            <h5 class="motto"></h5>
-                                            
-                                        </div>
-                                        <div class="content">
-                                            <div class="main">
-                                                <h4 class="text-center">Areas
-                                                    of Interests</h4>
-                                                <p class="text-center"></p>
-
-                                                <br><br><br><br>
-                                                
-                                                <p class="text-center external_affiliation"
-                                                    style="color:black;  line-height: 16px;"> </p>
-                                                
-                                            </div>
-                                        </div> -->
-                                        <div class="footer">
-                                            <button class="btn btn-simple" rel="tooltip" title
-                                                onclick="rotateCard(this)" data-original-title="Flip Card">
-                                                <i class="fa fa-reply">Back</i>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="col-md-4 col-sm-6">
-                            <div class="card-container manual-flip">
-                                <div class="card">
-                                    <div class="front">
-                                        <div class="cover">
-                                            <a
-                                                href="members/richard_dow/richard_dow.html">
-                                                <img
-                                                    src="members/richard_dow/media/images/cover.jpg">
-                                            </a>
-                                        </div>
-                                        <div class="user">
-                                            <a
-                                                href="members/richard_dow/richard_dow.html">
-                                                
-                                                <img class="img-circle"
-                                                    src="members/richard_dow/media/images/richard.jpg">
-                                                
-                                            </a>
-                                        </div>
-                                        <div class="content">
-                                            <div class="main">
-                                                <h3 class="name">
-                                                    <a href="members/richard_dow/richard_dow.html">
-                                                        Tripp Dow</a>
-                                                </h3>
-                                                
-                                                
-                                                <p class="text-center" style="color:black; line-height: 16px;">Identifying Worldwide Astrophysicists From Scientific Literature
-                                                </p>
-                                                
-                                                <br><br>
-                                                <div class="social-icon w3l-contacts-12">
-                                                    <div class="stats-container">
-                                                        <div class="social-links text-center">
-                                                            
-                                                        
-                                                            
-                                                            
-                                                            
-                                                            
-                                                            <a href="https://www.github.com/prettytrippy" target="_blank">
-                                                                <i class="fa fa-github"></i></a>
-                                                            
-                                                            
-                                                            <a href="mailto:dow00019@umn.edu" target="_blank">
-                                                                <i class="fa fa-envelope"></i></a>
-                                                            
-                                                            
-                                                                <a href="https://orcid.org/0009-0007-2842-1690"
-                                                                    target="_blank">
-                                                                    <i class="fa fa-newspaper"></i></a>
-                                                            
-                                                        
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="footer">
-                                                <button class="btn btn-simple" onclick="rotateCard(this)">
-                                                    <i class="fa fa-mail-forward">More</i>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- end front panel -->
-                                    <div class="back">
-                                        <!-- <div class="back">
-                                        <div class="header">
-                                            
-                                            <h5 class="motto"></h5>
-                                            
-                                        </div>
-                                        <div class="content">
-                                            <div class="main">
-                                                <h4 class="text-center">Areas
-                                                    of Interests</h4>
-                                                <p class="text-center"></p>
-
-                                                <br><br><br><br>
-                                                
-                                                <p class="text-center external_affiliation"
-                                                    style="color:black;  line-height: 16px;"> </p>
-                                                
-                                            </div>
-                                        </div> -->
-                                        <div class="footer">
-                                            <button class="btn btn-simple" rel="tooltip" title
-                                                onclick="rotateCard(this)" data-original-title="Flip Card">
-                                                <i class="fa fa-reply">Back</i>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
+                        <table>
+                            <tr>
+                                <th>Name</th>
+                                <th>Academic Role</th>
+                            </tr>
+                            
+                            <tr>
+                                <td>Sona Chitchyan</td>
+                                <td>Graduate Student</td>
+                            </tr>
+                            
+                            <tr>
+                                <td>Isaac Smith</td>
+                                <td>Undergraduate Student</td>
+                            </tr>
+                            
+                            <tr>
+                                <td>Kevin Cawley</td>
+                                <td>Undergraduate Student</td>
+                            </tr>
+                            
+                            <tr>
+                                <td>Iliomar Rodriguez-Ramos</td>
+                                <td></td>
+                            </tr>
+                            
+                            <tr>
+                                <td>Tripp Dow</td>
+                                <td></td>
+                            </tr>
+                            
+                        </table>
                     </div>
                     <!-- end row -->
                 </div>
