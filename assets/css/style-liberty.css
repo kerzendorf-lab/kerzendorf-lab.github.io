@@ -15,7 +15,8 @@ Author URL: http://w3layouts.com
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
-  --bs-purple: #6f42c1 --bs-pink: #d63384;
+  --bs-purple: #6f42c1;
+  --bs-pink: #d63384;
   --bs-red: #dc3545;
   --bs-orange: #fd7e14;
   --bs-yellow: #ffc107;
@@ -333,10 +334,9 @@ td,
 tfoot,
 th,
 thead,
-tr {
+tr{
   border-color: inherit;
   border-style: solid;
-  border-width: 0
 }
 
 label {
@@ -4889,6 +4889,20 @@ fieldset:disabled .btn {
 .card-body {
   flex: 1 1 auto;
   padding: 1rem 1rem
+}
+
+.description .hidden {
+  display: none;
+  text-transform: lowercase !important;
+  color: var(--font-color) !important;
+  font-size: 13px !important;
+  font-weight: 400 !important;
+}
+
+.readmore {
+  margin: 0 5px;
+  color: blue;
+  cursor: pointer;
 }
 
 .card-title {
@@ -19948,11 +19962,11 @@ button.owl-next {
   background: none;
   box-shadow: 0 20px 40px 0 rgba(50, 65, 141, 0.12);
   box-shadow: 0 25px 98px 0 rgba(0, 0, 0, 0.04);
-  border: 1px solid var(--border-color);
+  /* border: 1px solid var(--border-color); */
 }
 
 .w3l-blog .card-body {
-  padding: 1.5rem;
+  padding-bottom: 0.5rem;
   background: var(--bg-color);
 }
 
@@ -19961,6 +19975,7 @@ button.owl-next {
 }
 
 .w3l-blog a.zoom img {
+  object-fit: contain;
   transition: 0.3s ease-in-out;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
@@ -19980,8 +19995,8 @@ button.owl-next {
   overflow: hidden;
   border-radius: 50%;
   display: block;
-  width: 40px;
-  height: 40px;
+  width: 55px;
+  height: 55px;
 }
 
 .w3l-blog .card-header {
@@ -20090,8 +20105,8 @@ button.owl-next {
 }
 
 .author {
-  display: grid;
-  grid-template-columns: 40px 1fr auto;
+  display: flex; /*Keep this grid if using grid template columns*/
+  /* grid-template-columns: 40px 1fr auto; */
   grid-gap: 10px;
 }
 
@@ -22460,4 +22475,4 @@ pre {
 
 .click_button:hover span:after {
   opacity: 1;
-  rig
+}
