@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="UTF-8">
   <title>Adding Your Data for Hosting on the Website</title>
@@ -77,6 +78,7 @@
     }
   </style>
 </head>
+
 <body>
   <div class="instructions">
     <h2>How to Add Your Data for Hosting on the Website</h2>
@@ -89,10 +91,33 @@
       <h1>Detailed steps</h1>
     </ul>
     <ol>
-      <li>Fork the repository <a href="https://github.com/kerzendorf-group/group-data"
-          target="_blank">https://github.com/kerzendorf-group/group-data</a> </li>
-      <li>Clone your fork to your local system through the terminal<br>
+      <li>Fork the repository <a href="https://github.com/kerzendorf-lab/group-data"
+          target="_blank">https://github.com/kerzendorf-lab/group-data</a>. If you cant access the repo then please ask for access.</li>
+      <li>If you haven't already, generate an SSH key pair on your local machine. You can follow these steps: <ol
+          type="a">
+          <li>Open your terminal.</li>
+          <li>Run the following command to generate a new SSH key pair:
+            <br><code>ssh-keygen -t ed25519 -C "your_email@example.com"</code> <br>Replace "your_email@example.com" with
+            the email address associated with your GitHub account.</li>
+          <li>Press Enter when prompted to accept the default file location and name.</li>
+          <li>Enter a secure passphrase (optional) and confirm it.</li>
+        </ol>
       </li>
+      <li>Add your SSH key to your GitHub account: <ol type="a">
+          <li>Copy the contents of the public key file (id_ed25519.pub) to your clipboard. You can do this by running:
+            <br><code>cat ~/.ssh/id_ed25519.pub | pbcopy</code> </li>
+          <li>Go to your GitHub account settings and navigate to the "SSH and GPG keys" section.</li>
+          <li>Click on "New SSH key" or "Add SSH key".</li>
+          <li>Give your key a descriptive title (e.g., "My MacBook Pro") and paste the contents of the public key file
+            into the "Key" field.</li>
+          <li>Click "Add SSH key" or "Save changes".</li>
+        </ol>
+      </li>
+      <li>After adding your SSH key, you can use SSH to interact with GitHub repositories instead of HTTPS. When cloning
+        the repository, use the SSH URL instead of the HTTPS URL:
+        <br><code>git clone git@github.com:your-username/group-data.git</code>
+      </li>
+      <li>Clone your fork to your local system through the terminal<br></li>
       <li>Run <code>cd group-data</code>
       </li>
       <li>Create a new branch Eg: <code>git branch my-data</code><br> You may use any branch name instead of my-data
@@ -106,36 +131,28 @@
       <li>The following figure shows the structure of what the directories should look like. Please note that the
         'jsons' folder contains multiple JSON files and be sure to have them all. </li>
       <img style="max-width: 500px;" src="directory.png">
-      <li>Next, fill out the JSONs:.</li>
+      <li>Next, fill out the JSONs.</li>
       <ol type="a">
         <li>Ensure that the profile picture you upload is <mark>square</mark></li>
-        <li> The "category" key inside <i>basic_info.json</i> should be one of the following: <br>"Investigator",
-          “Undergraduate Students”, “Graduate Students”, "Postdoctoral Researchers", "Researchers", "Research Software
-          Engineers"
-          <mark>(spelling and case-sensitive)</mark>.
-        </li>
-
-        <li>Please note "primary_role": "Your_role" is for your more personal role in group. <br> <b>Example:</b><br>
-          "category":
-          "Undergraduates",<br>
-          "primary_role": "Professorial Assistant"
-        </li>
-          
-          <li> Write the name of your personal directory inside <mark>id</mark> key inside <i>basic_info.json</i>
-          </li>
-        <li>In <i>social_links.json</i>, if you do not have any of the social media accounts, you may leave them as an
-          empty
-          string. See the figure below for reference</li>
-        <img style="max-width: 500px;" src="social.png">
-        <li>In the following JSON files - <i>awards.json, books.json, docs.json, education.json, experience.json,
-            outreach.json, projects.json</i> - you may customize them as per your needs. For example, if you have not
-          written
-          any books, then the value of the 'section' key should be left blank <mark
-            style="background-color: rgb(251, 246, 187);">(empty string)</mark>, as shown below. Otherwise,
-          the part below section key of json doesn't need to be changed.</li>
-        <img style="max-width: 500px;" src="books.png">
-        <li>You may also customize fields as per your wishes, as shown below.</li>
-        <img style="max-width: 500px;" src="awards.png">
+        <li><mark>Info.json</mark> contains all of your personal information. The value of the <mark>Id</mark> key
+          should be "firstname_lastname".</li>
+        <li>If you are a student, we would want you to fill the <mark>education.json</mark> file with your course
+          details. Additionally, if you have any relevant experience, such as a role in the Kerzendorf group, please
+          fill out the <mark>experiences.json</mark> file accordingly.</li>
+        <li>There are some other optional JSON files you can fill out to display additional information on your
+          individual member page: <ul>
+            <li><b>awards.json</b> - Details about any awards or honors you have received.</li>
+            <li><b>documents.json</b> - Information about documents, such as certificates or publications, that you
+              would like to showcase.</li>
+            <li><b>outreach.json</b> - Details about any outreach activities or community involvement you have
+              participated in.</li>
+            <li><b>posters.json</b> - Information about any posters or presentations you have given.</li>
+            <li><b>projects.json</b> - Details about personal or professional projects you have worked on.</li>
+            <li><b>publications.json</b> - Information about any publications, such as papers or articles, that you have
+              authored.</li>
+            <li><b>social_links.json</b> - Details about your social media profiles or other online presences.</li>
+          </ul> You can fill out the desired JSON files as per your preference to display the corresponding information
+          on your individual member page.</li>
         <li>Ensure that after uploading the any media files, such as a profile picture or PDFs, you update those changes
           in your own JSON files in your directory as well, with the correct path pointing to the file location.</li>
       </ol>
@@ -163,4 +180,5 @@
     </ol>
   </div>
 </body>
+
 </html>
