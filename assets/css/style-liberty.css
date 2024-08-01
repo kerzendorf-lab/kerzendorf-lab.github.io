@@ -22478,13 +22478,22 @@ pre {
 }
 
 .social-button {
-  font-size: 1.2rem !important; /* Increase the size of the icons */
-  margin-right: 1rem !important; /* Add some space between the icons */
-  padding: 0.5rem !important; /* Add padding inside the button */
-  border: 1px solid #ccc !important; /* Add a border */
-  border-radius: 0.25rem !important; /* Add rounded corners */
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  color: white;
 }
 
-.linkedin{
-  background-color: rgb(10, 102, 194)
+.bi-twitter-x{
+  background-color: black;
+}
+
+.bi-linkedin{
+  background-color: rgb(10, 102, 194);
+}
+
+.share-articles{
+  text-align: center;
+  gap: 10px;
+  margin-bottom: 1rem;
 }
